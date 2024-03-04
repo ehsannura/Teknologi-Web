@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA ENTRY</title>
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/featured/?purple');
+            background-size: cover;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #f74e00;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button[type="reset"] {
+            background-color: hsla(141, 92%, 35%, 0.782);
+        }
+    </style>
+</head>
+<body>
+    <h1>Homepage DATA ENTRY</h1>
+
+    <form>
+        <ol>
+            <li>
+                Nama : <input type="text" name="nama">
+            </li>
+            <li>
+                NRP : <input type="text" name="nrp">
+            </li>
+            <li>
+                Kelas : <input type="text" name="kelas">
+            </li>
+            <li>
+                Jenis Kelamin :
+                <input type="radio" name="jenisKelamin" value="Pria"> Pria
+                <input type="radio" name="jenisKelamin" value="Wanita"> Wanita
+            </li>
+            <li>
+                Agama :
+                <select name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                </select>
+            </li>
+            <li>
+                Tempat/Tanggal Lahir : <input type="text" name="tempatTanggalLahir">
+            </li>
+            <li>
+                Alamat : <textarea name="alamat" rows="4"></textarea>
+            </li>
+            <li>
+                Riwayat Pendidikan :
+                <ul>
+                    <li>SD : <input type="text" name="sd"></li>
+                    <li>SMP : <input type="text" name="smp"></li>
+                    <li>SMA : <input type="text" name="sma"></li>
+                </ul>
+            </li>
+            <li>
+                Email : <input type="text" name="email">
+            </li>
+            <li>
+                Homepage : <input type="text" name="homepage">
+            </li>
+            <li>
+                Hobby : <textarea name="hobby" rows="4"></textarea>
+            </li>
+            <li>
+                Interest :
+                <input type="checkbox" name="interest" value="Komputer"> Komputer
+                <input type="checkbox" name="interest" value="Sport"> Sport
+                <input type="checkbox" name="interest" value="Travelling"> Travelling
+                <input type="checkbox" name="interest" value="Writing"> Writing
+                <input type="checkbox" name="interest" value="Reading"> Reading
+            </li>
+        </ol>
+
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+
